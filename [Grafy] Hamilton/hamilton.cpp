@@ -4,7 +4,7 @@
 #include <vector> 
 using namespace std;  
 vector<int> sprawdz(vector< vector<int> > graf, vector<int> sciezka);  
-vector<int> procedure_2(vector< vector<int> > graf, vector<int> sciezka);  // if k0 <n
+vector<int> kn(vector< vector<int> > graf, vector<int> sciezka);  // if k0 <n
 vector<int> roz(vector< vector<int> > graf, vector<int> sciezka);  //if k(s) < n
 vector<int> odwr(vector< vector<int> > graf, vector<int> sciezka);  //if k(s) < n odwrocona
 vector<int> cykl(vector< vector<int> > graf, vector<int> sciezka);  // k(s)
@@ -37,7 +37,7 @@ int main()
   vector<int> sciezka;  
   sciezka.push_back(vertex);           //Select initial vertex 
   sciezka=sprawdz(graf,sciezka);     //Part I  
-  sciezka=procedure_2(graf,sciezka);     //Part II 
+  sciezka=kn(graf,sciezka);     //Part II 
   k=sciezka.size();  
   if(k<n)   {sciezka=roz(graf,sciezka); k=sciezka.size();} 
   if(k<n)   {sciezka=odwr(graf,sciezka); k=sciezka.size();} 
@@ -115,7 +115,7 @@ vector<int> sprawdz(vector< vector<int> > graf, vector<int> sciezka)
  return rozsz_sciezka;  
 } 
 
-vector<int> procedure_2(vector< vector<int> > graf, vector<int> sciezka)  
+vector<int> kn(vector< vector<int> > graf, vector<int> sciezka)  
 {  
  int i, j, k, n=graf.size(); 
  bool quit=false; 
@@ -288,7 +288,7 @@ vector<int> roz(vector< vector<int> > graf, vector<int> sciezka)
    if(m<sciezka.size()) 
    { 
     sciezka=sprawdz(graf,sciezka); 
-    sciezka=procedure_2(graf,sciezka); 
+    sciezka=kn(graf,sciezka); 
    } 
    else quit=true;  
  } 
