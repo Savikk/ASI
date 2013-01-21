@@ -1,4 +1,4 @@
-Cykl Hamilltona
+Cykl Hamiltona
 Pawe³ Sawicki
 Dawid Pszczó³kowski
 
