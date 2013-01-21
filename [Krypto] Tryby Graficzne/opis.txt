@@ -1,0 +1,6 @@
+Tryby Graficzne
+Argumenty
+-ecb
+-cbc
+Bez argumentów wykona oba szyfrowania na raz
+Dla testu drugiego obrazka zmienic jego nazwe na plain.bmp
