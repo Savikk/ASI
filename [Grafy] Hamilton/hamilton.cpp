@@ -335,9 +335,9 @@ vector<int> sort(vector<vector<int> > graf)
  if(degree[i]<degree[j]) swap(index[i],index[j]); 
  return index; 
 }
-// nie pamiêtam czy to tu powinno byæ
-// ale boje siê to usun¹æ
-vector<vector<int> >  
+// nie pamietam czy to tu powinno byc
+// ale boje sie to usunac
+vector<vector<int> > 
       reindex(vector<vector<int> > graf, vector<int> index) 
 { 
   int i, j; 
