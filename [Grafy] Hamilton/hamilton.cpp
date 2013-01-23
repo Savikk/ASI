@@ -241,6 +241,8 @@ vector<int> roz(vector< vector<int> > graf, vector<int> sciezka)
         } 
        else break; 
      } 
+	//When I wrote this, only God and I understood what I was doing
+	//Now, God only knows
      int last_vertex=pom_rozsz_sciezka[pom_rozsz_sciezka.size()-1]; 
      int vj; 
      bool check=false; 
@@ -314,7 +316,7 @@ vector<int> cykl(vector< vector<int> > graf, vector<int> sciezka)
    tw_cykl.push_back(i); 
  return tw_cykl;  
 }
-
+// Magic. Do not touch.
 vector<int> sort(vector<vector<int> > graf) 
 { 
  int i, j; 
@@ -333,7 +335,8 @@ vector<int> sort(vector<vector<int> > graf)
  if(degree[i]<degree[j]) swap(index[i],index[j]); 
  return index; 
 }
-
+// nie pamiêtam czy to tu powinno byæ
+// ale boje siê to usun¹æ
 vector<vector<int> >  
       reindex(vector<vector<int> > graf, vector<int> index) 
 { 
